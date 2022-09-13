@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon"
+	href="https://cdn-icons.flaticon.com/png/512/1014/premium/1014256.png?token=exp=1655829447~hmac=ab910478a258d5c7d98f8fdaf6428cc4">
+<title>Music World</title>
+<style>
+body {
+	margin: 0%;
+	background-image:
+		url('https://cdn.pixabay.com/photo/2017/01/18/17/14/girl-1990347_1280.jpg');
+}
+
+.green {
+	display: flex;
+}
+
+.navtop {
+	padding-left: 100px;
+	/* border: solid; */
+	display: flex;
+	background-color: rgba(224, 56, 137, 0.55);
+	height: 60px;
+}
+
+.home {
+	/* border: solid; */
+	/* margin-top: 0%;
+    margin-left: 0%; */
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+.h {
+	background-color: aqua;
+	border-width: 0ch;
+	box-shadow: black;
+	border-radius: 5px;
+	height: 30px;
+	width: 40px;
+	/* border: solid; */
+	margin-left: 0%;
+}
+
+.h:hover {
+	cursor: pointer;
+}
+
+.music {
+	font-family: "Brush Script MT";
+	padding-left: 250px;
+	padding-top: 6px;
+	margin-left: 0%;
+	/* border: solid; */
+	padding-left: 0px;
+	margin-left: 80px;
+}
+
+.m {
+	padding-bottom: 20px;
+	padding-top: 1px;
+	/* border: solid; */
+	margin-top: 0px;
+	width: 200px;
+	font-size: 40px;
+	color: rgb(150, 246, 246);
+}
+
+.search {
+	padding-left: 250px;
+	padding-top: 15px;
+	padding-left: 20px;
+	margin-left: 90px;
+	/* border: solid; */
+	display: flex;
+}
+
+.s {
+	height: 32px;
+	width: 32px;
+	border-radius: 10px;
+	border-width: 0.1mm;
+	border: snow;
+}
+
+.s:hover {
+	cursor: pointer;
+}
+
+.sbox {
+	height: 25px;
+	width: 400px;
+	margin-left: 5px;
+}
+
+.but {
+	padding-left: 90px;
+	padding-top: 15px;
+	display: flex;
+}
+
+.dsh, .lgt {
+	border: snow;
+	height: 30px;
+	font-size: 12px;
+	background-color: aqua;
+	border-width: 0.3mm;
+	border-radius: 2px;
+}
+
+.dsh:hover, .lgt:hover {
+	background-color: rgb(241, 241, 233);
+	cursor: pointer;
+}
+
+.lgt {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.c1 {
+	display: flex;
+	border: solid;
+	padding-left: 50px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	border-width: 0.1mm;
+}
+
+.c11, .c12, .c13, .c14, .c15, .c21, .c22, .c23, .c24, .c25 {
+	border-radius: 12px;
+	background-color: rgba(169, 169, 169, 0.63);
+}
+
+.c11 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.s1 {
+	width: 150px;
+	height: 180px;
+	margin-left: 26px;
+	margin-top: 15px;
+	border-radius: 12px;
+}
+
+.a1 {
+	width: 180px;
+	margin-left: 10px;
+	height: 35px;
+	margin-top: 0px;
+	/* border: solid; */
+}
+
+.n1 {
+	/* border: solid; */
+	margin-bottom: 8px;
+	margin-top: 5px;
+	padding-left: 40px;
+	color: darkblue;
+	/* display:flex; */
+}
+
+.n2 {
+	padding-left: 40px;
+	margin-top: 5px;
+	color: darkblue;
+}
+
+.n3 {
+	padding-top: 1px;
+	color: darkblue;
+	padding-left: 35px;
+}
+
+.n3 {
+	margin-bottom: 8px;
+	margin-top: 5px;
+	padding-left: 40px;
+	color: darkblue;
+}
+/* .sym{
+
+} */
+.c11:hover, .c12:hover, .c13:hover, .c14:hover, .c15:hover, .c21:hover,
+	.c22:hover, .c23:hover, .c24:hover, .c25:hover {
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+}
+
+.c12 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.c13 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.c14 {
+	border-width: 0.1mm;
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.c15 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.c2 {
+	display: flex;
+	border: solid;
+	margin-top: 20px;
+	padding-left: 50px;
+	border-radius: 10px;
+	border-width: 0.1mm;
+	padding-bottom: 20px;
+}
+
+.c21 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.c22 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.c23 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.c24 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.c25 {
+	height: 280px;
+	border: solid;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 40px;
+	border-width: 0.1mm;
+	transition: transform .2s;
+}
+
+.p1 {
+	margin-left: 0px;
+}
+
+.p2 {
+	margin-right: 0px;
+	padding-left: 0%;
+	/* border: solid;
+     */
+}
+
+.s4 {
+	width: 150px;
+	height: 180px;
+	margin-left: 26px;
+	margin-top: 15px;
+	border-radius: 12px;
+}
+</style>
+</head>
+<body>
+	<div class="a">
+		<div class="green">
+			<div class="navtop">
+				<div class="home">
+				<a href="http://localhost:3000/">
+					<button class="h">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+						<path d="M12 6.453l9 8.375v9.172h-6v-6h-6v6h-6v-9.172l9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z" /></svg></a>
+					</button></a>
+				</div>
+				<div class="music">
+					<h2 class="m">Music World</h2>
+				</div>
+				<div class="search">
+					<input type="text" class="sbox" placeholder="Search Song here" />
+					<button class="s">
+						<i><svg xmlns="http://www.w3.org/2000/svg" width="20"
+								height="20" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+									d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" /></svg>
+						</i>
+					</button>
+				</div>
+				<div class="but">
+					<div>
+						<a href="http://localhost:3000/dashboard"><button class="dsh">Dashboard</button></a>
+					</div>
+					<div>
+						<button type="submit" sec:authorize="isAuthenticated()"
+							class="lgt">
+							<a class="lgt" th:href="@{/logout}">Logout</a>
+						</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="body2"></div> -->
+	</div>
+	<div class="cards">
+		<div class="c1">
+			<div class="c11">
+				<img
+					src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/7/2/0/e/720ea15285b824961e5fdfce7ee5ead5.jpg"
+					class="s1" />
+				<h4 class="n1">Aurora(Runway)</h4>
+				<audio controls class="a1">
+					<source
+						src="https://assets.coderrocketfuel.com/pomodoro-times-up.mp3"
+						type="audio/mpeg" />
+				</audio>
+			</div>
+
+			<div class="c12">
+				<img
+					src="https://c-fa.cdn.smule.com/rs-s82/arr/e9/46/1555b62e-6d89-446c-9082-b4e2f89ed75c_1024.jpg"
+					class="s1" />
+				<h4 class="n1">Karigeloga(Arya2)</h4>
+				<audio controls class="a1">
+					<source src="./karigeloga.mp3" type="audio/mpeg" />
+				</audio>
+			</div>
+
+			<div class="c13">
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmD_7_dmf1PsmhDfcFkS2WSvjNb5bqO_IjX2Hl3Na0Bh7sd0yCNLFVS4Lt24tHyUJBj4Y&usqp=CAU"
+					class="s1" />
+				<div class="p1">
+					<h4 class="n1">There Mitti(Kesari)</h4>
+				</div>
+				<audio controls class="a1">
+					<source
+						src="D:\Assignments\MusicFrontEnd\musicapp\src\Component\Teri-Mitti(PaglaSongs).mp3"
+						type="audio/mpeg" />
+				</audio>
+			</div>
+
+			<div class="c14">
+				<img
+					src="https://i.pinimg.com/736x/2d/ae/7c/2dae7c64c81c49819fbedff8e6f82c0b.jpg"
+					class="s1" />
+				<div class="p2">
+					<h4 class="n1">Kanulu(David)</h4>
+				</div>
+				<audio controls class="a1">
+					<source
+						src="D:\Assignments\MusicFrontEnd\musicapp\src\Component\Kanule Kanele - SenSongsmp3.Co.mp3"
+						type="audio/mpeg" />
+				</audio>
+			</div>
+
+			<div class="c15">
+				<img
+					src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kgf-chapter-2-et00098647-08-04-2022-11-33-32.jpg"
+					class="s1" />
+				<h4 class="n1">Toofan(KGF2)</h4>
+				<audio controls class="a1">
+					<source src="" type="audio/mpeg" />
+				</audio>
+			</div>
+		</div>
+
+		<div class="c2">
+			<div class="c21">
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHOcIzTY29wUPFcQqClWfVM-e8C9vwLSN3kA&usqp=CAU"
+					class="s1" />
+				<h4 class="n1">Naalai(Maan Karate)</h4>
+				<audio controls class="a1">
+					<source
+						src="D:\Assignments\MusicFrontEnd\musicapp\src\Component\Naalai endrum nam kayil illai.mp3"
+						type="audio/mpeg" />
+				</audio>
+			</div>
+
+			<div class="c22">
+				<img
+					src="https://ih1.redbubble.net/image.2710797286.0273/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg"
+					class="s1" />
+				<h4 class="n1">Hold on(Overstreet)</h4>
+				<audio controls class="a1">
+					<source src="" type="audio/mpeg" />
+				</audio>
+			</div>
+
+			<div class="c23">
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzC-tdDkjApWI-OMeygBFvZxDeh4gXkwXJAw&usqp=CAU"
+					class="s1" />
+				<h4 class="n1">Maa Telugu(Leader)</h4>
+				<audio controls class="a1">
+					<source
+						src="https://drive.google.com/file/d/1gb-srVrX07d_Lr3Ijqw3eT07Q0Yx-0qz/view?usp=sharing"
+						type="audio/mpeg" />
+				</audio>
+			</div>
+
+			<div class="c24">
+				<img
+					src="https://i.pinimg.com/originals/b4/9f/f7/b49ff775a37fe195adcc87bd51124b9a.jpg"
+					class="s1" />
+				<h4 class="n1">Lai Lai(Joker)</h4>
+				<audio controls class="a1">
+					<source
+						src="D:\Assignments\MusicFrontEnd\musicapp\src\Component\y2mate.com - Orginal  lie lie lie  song joker from the dark Knight movie mede with wats up status.mp3" />
+				</audio>
+			</div>
+
+			<div class="c25">
+				<img
+					src="https://static.toiimg.com/photo/msid-89720069/89720069.jpg"
+					class="s1" />
+				<h4 class="n1">Lala(Bheemla Nayak)</h4>
+				<audio controls class="a1">
+					<source
+						src="D:\Assignments\MusicFrontEnd\musicapp\src\Component\[iSongs.info] 03 - Lala Bheemla.mp3"
+						type="audio/mpeg" />
+				</audio>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
